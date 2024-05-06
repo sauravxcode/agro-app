@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    top: 0;
+    padding: 15px 10%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 180px;
+    cursor: pointer;
+}
+
+.nav__item {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.nav__item a {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #191919;
+    transition: all 0.3s ease 0s;
+}
+
+nav ul li a:hover {
+    color: #009640;
+    font-weight: 600;
+}
+
+/* Buttons */
+button {
+    font-size: 18px;
+    color: white;
+    display: inline-block;
+    padding: 9px 25px;
+    background-color: #007633;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover,
+.find-btn:hover {
+    background-color: #009640;
+}
+
+.crop-section {
+    margin-top: 6rem;
+}
+
+.crop_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+.crop {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.crop img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+/* ================ */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 15px 5%;
+}
+
+.footer-left img {
+    width: 200px; /* Adjust as needed */
+}
+
+.footer-right .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-right .social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-right .social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-right .social-links a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    transition: all 0.3 ease 0.2;
+}
+
+.footer-right .social-links a:hover {
+    color: #00ca57;
+}
+
+@media (max-width: 600px) {
+    .crop {
+        width: calc(50% - 20px);
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .nav__item {
+        display: none;
+    }
+}

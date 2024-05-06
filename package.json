@@ -1,0 +1,11 @@
+{
+  "name": "agroapp",
+  "version": "1.0.0",
+  "description": "Farmer Government Aided Schemes",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
